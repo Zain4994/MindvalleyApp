@@ -1,0 +1,6 @@
+framework module Pods_MindvalleyApp {
+  umbrella header "Pods-MindvalleyApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
