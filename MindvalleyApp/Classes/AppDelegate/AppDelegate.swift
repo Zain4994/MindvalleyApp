@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import CacheLibrary
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		///Cache config
+		diskConfigName = "MindvalleyAppData"
+		memoryCountLimit = 20
+		memoryTotalCostLimit = 0
+		memoryExpiry = .never
+		
 		return true
 	}
 

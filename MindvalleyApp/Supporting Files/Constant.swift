@@ -2,12 +2,12 @@
 //  Constant.swift
 //  MindvalleyApp
 //
-//  Created by Zain Almasri on 7/24/19.
+//  Created by Zain Almasri on 7/28/19.
 //  Copyright © 2019 Zain Almasri. All rights reserved.
 //
 
 import UIKit
-import Cache
+import CacheLibrary
 
 // MARK: Screen size
 enum ScreenSize {
@@ -21,10 +21,3 @@ enum ScreenSize {
 	static let height = UIScreen.main.bounds.height
 }
 
-let diskConfig = DiskConfig(name: "MindcalleyAppData")
-let memoryConfig = MemoryConfig(expiry: .never, countLimit: 20, totalCostLimit: 0)
-let storage = try! Storage(
-	diskConfig: diskConfig,
-	memoryConfig: memoryConfig,
-	transformer: TransformerFactory.forCodable(ofType: CachedData.self)
-)

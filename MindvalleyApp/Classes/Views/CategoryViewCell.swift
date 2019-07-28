@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CacheLibrary
 
 class CategoryViewCell: UICollectionViewCell {
 	
@@ -14,7 +15,7 @@ class CategoryViewCell: UICollectionViewCell {
 	@IBOutlet weak var categoryView: UIView!
 	@IBOutlet weak var categoryImageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
-
+	@IBOutlet weak var activityIndecator: UIActivityIndicatorView!
 	
 	/// Populate category view
 	func populateCell(category: Category) {
@@ -28,10 +29,11 @@ class CategoryViewCell: UICollectionViewCell {
 		} else if let value = category.user?.profileImage?.large, ScreenSize.isBigScreen || ScreenSize.isXBigScreen || ScreenSize.isIpad {
 			imageString = value
 		}
-		
 		if imageString != "" {
+			activityIndecator.startAnimating()
 			checkIfCached(from: imageString, completionBlock: {
 				(data, success) in
+				self.activityIndecator.stopAnimating()
 				if success {
 					self.categoryImageView.image = UIImage(data: data)
 				}

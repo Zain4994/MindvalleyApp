@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Cache
+import CacheLibrary
 
 class HomeViewController: UIViewController {
 	

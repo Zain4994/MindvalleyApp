@@ -13,7 +13,7 @@
 		BA5B869F22E700AF000A84B6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5B869D22E700AF000A84B6 /* Home.storyboard */; };
 		BA5B86A122E700B0000A84B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5B86A022E700B0000A84B6 /* Images.xcassets */; };
 		BA5B86A422E700B0000A84B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5B86A222E700B0000A84B6 /* LaunchScreen.storyboard */; };
-		BA5B86AF22E700B0000A84B6 /* MindvalleyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B86AE22E700B0000A84B6 /* MindvalleyAppTests.swift */; };
+		BA5B86AF22E700B0000A84B6 /* CacheTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B86AE22E700B0000A84B6 /* CacheTest.swift */; };
 		BA5B86BA22E700B0000A84B6 /* MindvalleyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B86B922E700B0000A84B6 /* MindvalleyAppUITests.swift */; };
 		BA773BBA22E9001900565546 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA773BB922E9001900565546 /* ApiManager.swift */; };
 		BA773BBC22E9027900565546 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA773BBB22E9027900565546 /* Category.swift */; };
@@ -22,12 +22,10 @@
 		BA773BC222E99BB600565546 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA773BC122E99BB600565546 /* Links.swift */; };
 		BA773BC422E99EB700565546 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA773BC322E99EB700565546 /* Urls.swift */; };
 		BA773BC622E99FAC00565546 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA773BC522E99FAC00565546 /* Categories.swift */; };
-		BA773BCA22EA51C600565546 /* CachedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA773BC922EA51C600565546 /* CachedData.swift */; };
-		BA773BCC22EA675C00565546 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA773BCB22EA675C00565546 /* CacheManager.swift */; };
 		BA773BCE22EB85A000565546 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA773BCD22EB85A000565546 /* ServerError.swift */; };
 		BACFA5F022E8ED4B005E9164 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA5EF22E8ED4B005E9164 /* HomeViewController.swift */; };
-		BACFA5F222E8EF31005E9164 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA5F122E8EF31005E9164 /* Constant.swift */; };
 		BACFA5FB22E8F300005E9164 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA5FA22E8F300005E9164 /* CategoryViewCell.swift */; };
+		BAE11CE522EDE92F000C5572 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE11CE422EDE92F000C5572 /* Constant.swift */; };
 		C437089EFE9FC829175E5A16 /* Pods_MindvalleyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31521D0909EF4B5D6964200C /* Pods_MindvalleyAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +59,7 @@
 		BA5B86A322E700B0000A84B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA5B86A522E700B0000A84B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA5B86AA22E700B0000A84B6 /* MindvalleyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindvalleyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA5B86AE22E700B0000A84B6 /* MindvalleyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindvalleyAppTests.swift; sourceTree = "<group>"; };
+		BA5B86AE22E700B0000A84B6 /* CacheTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTest.swift; sourceTree = "<group>"; };
 		BA5B86B022E700B0000A84B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA5B86B522E700B0000A84B6 /* MindvalleyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindvalleyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5B86B922E700B0000A84B6 /* MindvalleyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindvalleyAppUITests.swift; sourceTree = "<group>"; };
@@ -73,12 +71,10 @@
 		BA773BC122E99BB600565546 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		BA773BC322E99EB700565546 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		BA773BC522E99FAC00565546 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
-		BA773BC922EA51C600565546 /* CachedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedData.swift; sourceTree = "<group>"; };
-		BA773BCB22EA675C00565546 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		BA773BCD22EB85A000565546 /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
 		BACFA5EF22E8ED4B005E9164 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BACFA5F122E8EF31005E9164 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		BACFA5FA22E8F300005E9164 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
+		BAE11CE422EDE92F000C5572 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C2EDCAA6AB41FF6981559A58 /* Pods-MindvalleyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MindvalleyAppTests/Pods-MindvalleyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D44E6D4FC1132D70B347D973 /* Pods-MindvalleyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MindvalleyAppTests.release.xcconfig"; path = "Target Support Files/Pods-MindvalleyAppTests/Pods-MindvalleyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EEEED7F6CFDDF0C5F54C65BF /* Pods_MindvalleyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindvalleyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,7 +169,7 @@
 		BA5B86AD22E700B0000A84B6 /* MindvalleyAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA5B86AE22E700B0000A84B6 /* MindvalleyAppTests.swift */,
+				BA5B86AE22E700B0000A84B6 /* CacheTest.swift */,
 				BA5B86B022E700B0000A84B6 /* Info.plist */,
 			);
 			path = MindvalleyAppTests;
@@ -221,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				BA5B86A522E700B0000A84B6 /* Info.plist */,
-				BACFA5F122E8EF31005E9164 /* Constant.swift */,
+				BAE11CE422EDE92F000C5572 /* Constant.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -251,7 +247,6 @@
 				BA773BC122E99BB600565546 /* Links.swift */,
 				BA773BC322E99EB700565546 /* Urls.swift */,
 				BA773BC522E99FAC00565546 /* Categories.swift */,
-				BA773BC922EA51C600565546 /* CachedData.swift */,
 				BA773BCD22EB85A000565546 /* ServerError.swift */,
 			);
 			path = Models;
@@ -261,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				BA773BB922E9001900565546 /* ApiManager.swift */,
-				BA773BCB22EA675C00565546 /* CacheManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -423,6 +417,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-MindvalleyApp/Pods-MindvalleyApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/CacheLibrary/CacheLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -431,6 +426,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CacheLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,14 +513,12 @@
 				BA773BBA22E9001900565546 /* ApiManager.swift in Sources */,
 				BA773BCE22EB85A000565546 /* ServerError.swift in Sources */,
 				BA773BC222E99BB600565546 /* Links.swift in Sources */,
-				BA773BCC22EA675C00565546 /* CacheManager.swift in Sources */,
 				BACFA5FB22E8F300005E9164 /* CategoryViewCell.swift in Sources */,
 				BA773BC622E99FAC00565546 /* Categories.swift in Sources */,
-				BA773BCA22EA51C600565546 /* CachedData.swift in Sources */,
-				BACFA5F222E8EF31005E9164 /* Constant.swift in Sources */,
 				BA773BBC22E9027900565546 /* Category.swift in Sources */,
 				BA773BBE22E9995800565546 /* User.swift in Sources */,
 				BA773BC422E99EB700565546 /* Urls.swift in Sources */,
+				BAE11CE522EDE92F000C5572 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA5B86AF22E700B0000A84B6 /* MindvalleyAppTests.swift in Sources */,
+				BA5B86AF22E700B0000A84B6 /* CacheTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

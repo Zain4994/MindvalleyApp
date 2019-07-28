@@ -10,6 +10,7 @@ import Foundation
 import SystemConfiguration
 import Alamofire
 import SwiftyJSON
+import CacheLibrary
 
 class ApiManager: NSObject {
 	

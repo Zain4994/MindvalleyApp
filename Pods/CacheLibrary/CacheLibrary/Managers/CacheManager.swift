@@ -9,7 +9,7 @@
 import UIKit
 import Cache
 
-func downloaded(from url: URL, link: String, completionBlock: @escaping (_ data: Data, _ success: Bool) -> Void) {
+public func downloaded(from url: URL, link: String, completionBlock: @escaping (_ data: Data, _ success: Bool) -> Void) {
 	URLSession.shared.dataTask(with: url) { data, response, error in
 		guard
 			let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
@@ -23,7 +23,7 @@ func downloaded(from url: URL, link: String, completionBlock: @escaping (_ data:
 	}.resume()
 }
 
-func checkIfCached(from link: String, completionBlock: @escaping (_ data: Data, _ success: Bool) -> Void) {
+public func checkIfCached(from link: String, completionBlock: @escaping (_ data: Data, _ success: Bool) -> Void) {
 	guard let url = URL(string: link) else { return }
 	let hasData = try? storage.existsObject(forKey: link)
 	if hasData ?? false {

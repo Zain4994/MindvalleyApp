@@ -59,11 +59,20 @@
                                                                 <constraint firstAttribute="width" constant="345" id="bVf-qm-Gg3"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7tD-Xe-1ay">
+                                                            <rect key="frame" x="177.5" y="177.5" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="fhw-mj-fTO"/>
+                                                                <constraint firstAttribute="height" constant="20" id="irS-Cs-er3"/>
+                                                            </constraints>
+                                                        </activityIndicatorView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="9Xt-hI-gX8"/>
                                                         <constraint firstItem="qnH-CO-ZHg" firstAttribute="top" secondItem="J0y-ep-BJS" secondAttribute="top" constant="15" id="AYd-1n-YC5"/>
+                                                        <constraint firstItem="7tD-Xe-1ay" firstAttribute="centerY" secondItem="qnH-CO-ZHg" secondAttribute="centerY" id="FQL-g9-nVs"/>
+                                                        <constraint firstItem="7tD-Xe-1ay" firstAttribute="centerX" secondItem="qnH-CO-ZHg" secondAttribute="centerX" id="GBD-PF-W1J"/>
                                                         <constraint firstItem="MI8-jS-Svk" firstAttribute="leading" secondItem="J0y-ep-BJS" secondAttribute="leading" constant="15" id="LGg-Gk-UMW"/>
                                                         <constraint firstAttribute="height" constant="400" id="e3Q-bQ-5PL"/>
                                                         <constraint firstAttribute="bottom" secondItem="MI8-jS-Svk" secondAttribute="bottom" id="kdd-mi-uSW"/>
@@ -82,6 +91,7 @@
                                             <constraint firstAttribute="trailing" secondItem="J0y-ep-BJS" secondAttribute="trailing" id="zVS-8W-bWI"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="activityIndecator" destination="7tD-Xe-1ay" id="tJd-lu-pOT"/>
                                             <outlet property="categoryImageView" destination="qnH-CO-ZHg" id="JBT-YQ-URd"/>
                                             <outlet property="categoryView" destination="J0y-ep-BJS" id="zuu-R1-Jml"/>
                                             <outlet property="titleLabel" destination="MI8-jS-Svk" id="E3T-bh-Jsi"/>
